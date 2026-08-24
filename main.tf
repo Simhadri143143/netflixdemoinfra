@@ -18,11 +18,7 @@ variable "instance_names" {
 }
 
 resource "aws_s3_bucket" "one" {
-  bucket = "my-bucket-name"
-}
-
-resource "aws_s3_bucket" "one" {
-  bucket = "jenkins-java-subbu143-2026-bucket" # Must be globally unique
+  bucket = "subbu143-jenkins-java-bucket-2026" # Unique name to avoid the region/collision error
 }
 
 resource "aws_s3_bucket_versioning" "one_versioning" {
