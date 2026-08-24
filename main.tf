@@ -18,7 +18,7 @@ variable "instance_names" {
 }
 
 resource "aws_s3_bucket" "one" {
-  bucket = "project-s3-1234"
+  bucket = "my-project-bucket-123456789"
   versioning {
     enabled = true
   }
